@@ -1,0 +1,97 @@
+
+body{
+    font-size: 1rem;
+    display: grid;
+    margin: 0;
+    padding: 0;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto auto;
+
+    grid-template-areas:         
+        "navigation content";
+        
+}
+
+.nav-area{
+    grid-area: navigation;
+    background-color: #adb8af;
+    color: #6b4f54;
+    text-align: center;  
+}
+
+.content-area{
+    grid-area: content;
+    margin: 0px 60px 10px 60px;
+
+}
+/*default font size of html element is 16px so use rem for root relative size instead of em for parent.
+This will help with nested elements that if used em could have cascading effects 
+rule of thumb: rem for font-size, em for padding and margin, em or % for widths
+*/
+h1{
+    font-size: 2.5rem;
+}
+h2{
+    font-size: 2rem;
+    text-align: center;
+}
+h3{
+    font-size: 1.75rem;
+}
+
+a{
+    font-size: 1rem;
+}
+li{
+    padding-bottom: 20px;
+}
+li a{
+    text-decoration: none;
+    color: #6b4f54; 
+    font-size: 1.25em;
+    
+}
+
+#welcome-section{
+    text-align: center;
+}
+
+main{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+        "main"
+        "footer";
+}
+
+.nav-list{
+    list-style: none;
+    padding: 0;
+
+}
+
+footer{
+    grid-area: footer;
+}
+
+
+
+br{
+    color: #6b4f54;
+    height: 10px;
+}
+img {
+    border-radius: 50%;
+    max-width: 35%;
+    margin-top: 20px;  
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.line-break{
+    height: 5px; 
+    background-color: #6b4f54;
+    display: block;
+    width: 10px;
+}
