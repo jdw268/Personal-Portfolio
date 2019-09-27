@@ -13,7 +13,7 @@ for(var i = 0; i<sectionHeaders.length; i++){
     var h2Child = sectionHeaders[i].children;
     for(var x =0; x<length; x++){
 
-        h2Child[0].innerText = "test ";
+       // h2Child[0].innerText = "test ";
     }
     //sectionHeaders[i].children.
 }

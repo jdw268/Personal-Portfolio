@@ -17,11 +17,18 @@ body{
     background-color: #adb8af;
     color: #6b4f54;
     text-align: center;  
+    position: sticky;
+    margin: 0px 00px 0px 0px;
+   
 }
+
+
+
 
 .content-area{
     grid-area: content;
-    margin: 0px 60px 10px 60px;
+   /* margin: 0px 60px 10px 60px;
+   */
 
 }
 /*default font size of html element is 16px so use rem for root relative size instead of em for parent.
@@ -42,8 +49,16 @@ h3{
 a{
     font-size: 1rem;
 }
-li{
+
+p{
+    margin: 10px 60px 10px 60px;
+}
+.nav-area, li{
     padding-bottom: 20px;
+}
+
+ul{
+    margin: 10px 60px 10px 60px;
 }
 li a{
     text-decoration: none;
@@ -52,9 +67,16 @@ li a{
     
 }
 
-#welcome-section{
-    text-align: center;
+li{
+    padding: 0px 0px 5px 0px;
 }
+
+main h3{
+    font-size: 1.17rem;
+    margin: 0px 60px 10px 60px;
+}
+
+
 
 main{
     display: grid;
@@ -83,6 +105,14 @@ br{
 }
 img {
     border-radius: 50%;
+    max-width: 30px;    
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2px;
+  }
+
+  #pic {
+    border-radius: 50%;
     max-width: 35%;
     margin-top: 20px;  
     margin-left: auto;
@@ -94,4 +124,29 @@ img {
     background-color: #6b4f54;
     display: block;
     width: 10px;
+}
+
+#skills{
+    text-align: center;
+    background-color: #b8adaf;
+}
+
+#edu{
+    text-align: center;
+    background-color: #adb8af;
+}
+
+#about{
+    background-color: #adb8af;
+}
+#projects{ background-color: #adb8af;}
+
+#welcome-section{
+    text-align: center;
+    position: -webkit-sticky;
+
+}
+
+#work-experience{
+    background-color: #b8adaf;
 }
